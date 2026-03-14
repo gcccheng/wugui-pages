@@ -1,0 +1,154 @@
+/* Bright, clean, professional theme (screen)
+   Overrides the original markdown-cv kjhealy theme while keeping structure.
+*/
+
+:root {
+  --bg: #f7fafc;
+  --paper: #ffffff;
+  --text: #0f172a;      /* slate-900 */
+  --muted: #475569;     /* slate-600 */
+  --muted-2: #64748b;   /* slate-500 */
+  --border: #e2e8f0;    /* slate-200 */
+  --accent: #2563eb;    /* blue-600 */
+  --accent-2: #1d4ed8;  /* blue-700 */
+  --code-bg: #0b1220;
+  --shadow: 0 10px 30px rgba(2, 8, 23, 0.08);
+}
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: radial-gradient(1200px 600px at 15% -10%, rgba(37, 99, 235, 0.08), transparent 60%),
+              radial-gradient(900px 500px at 90% 0%, rgba(14, 165, 233, 0.06), transparent 55%),
+              var(--bg);
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+               "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji",
+               "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Keep layout stable and centered */
+#main {
+  max-width: 980px;
+  margin: 48px auto;
+  padding: 0 20px;
+}
+
+#content {
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 42px 54px;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+
+h1 {
+  font-size: 34px;
+  line-height: 1.2;
+  margin: 0 0 10px 0;
+}
+
+h2 {
+  font-size: 18px;
+  margin: 28px 0 10px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+  color: var(--text);
+}
+
+h3 {
+  font-size: 16px;
+  margin: 14px 0 6px;
+}
+
+p {
+  margin: 6px 0;
+  color: var(--muted);
+}
+
+strong { color: var(--text); }
+
+/* Top title tagline (first paragraph right after h1 is usually the tagline) */
+h1 + p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: var(--muted-2);
+  font-weight: 600;
+}
+
+/* Web address block */
+#webaddress {
+  margin: 10px 0 16px;
+  padding: 10px 12px;
+  background: linear-gradient(180deg, rgba(37,99,235,0.06), rgba(37,99,235,0.02));
+  border: 1px solid rgba(37,99,235,0.18);
+  border-radius: 10px;
+  color: var(--muted);
+}
+
+#webaddress a {
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#webaddress a:hover {
+  color: var(--accent-2);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Links */
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+/* Lists */
+ul, ol {
+  margin: 8px 0 10px;
+  padding-left: 20px;
+  color: var(--muted);
+}
+
+li { margin: 4px 0; }
+
+/* Horizontal rule (you used --- in markdown) */
+hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 18px 0;
+}
+
+/* Inline code */
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.92em;
+  padding: 0.15em 0.35em;
+  border-radius: 6px;
+  background: rgba(15, 23, 42, 0.06);
+  color: var(--text);
+}
+
+pre code {
+  display: block;
+  padding: 14px 16px;
+  background: var(--code-bg);
+  color: #e5e7eb;
+  overflow-x: auto;
+}
+
+/* Better spacing on small screens */
+@media (max-width: 680px) {
+  #main { margin: 18px auto; }
+  #content { padding: 22px 18px; border-radius: 12px; }
+  h1 { font-size: 28px; }
+}

@@ -1,0 +1,22 @@
+# Jekyll / GitHub Pages
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ruby / Bundler
+.bundle/
+vendor/bundle/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+.terraform.lock.hcl
+
+# Ansible / secrets
+ansible/.rke2_token
+
+# macOS
+.DS_Store
