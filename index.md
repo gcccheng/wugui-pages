@@ -8,6 +8,7 @@ title: 程刚中文简历
 Red Hat 认证架构师（RHCA）｜Red Hat 2024 年度认证专业人士（RHCP of the Year）｜Senior Platform Engineer｜平台架构/治理｜AIOps / Platform Ops｜Developer Experience
 
 <div id="webaddress">
+<a href="/wugui-pages/cvenglish.html">English</a> ·
 <a href="https://www.redhat.com/zh-cn/blog/announcing-2024-red-hat-certified-professional-year-gang-cheng">Red Hat 官方简介</a> ·
 <a href="https://www.linkedin.com/in/gang-cheng-7170a521/">LinkedIn</a>
 </div>

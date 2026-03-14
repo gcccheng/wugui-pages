@@ -7,6 +7,7 @@ title: Gang Cheng's CV
 Red Hat Certified Architect (RHCA) | Red Hat Certified Professional of the Year 2024 | Senior Platform Engineer | Platform Architecture & Governance | AIOps / Platform Ops | Developer Experience
 
 <div id="webaddress">
+<a href="/wugui-pages/">中文</a> ·
 <a href="https://www.redhat.com/en/blog/announcing-2024-red-hat-certified-professional-year-gang-cheng">Red Hat Official Profile</a> ·
 <a href="https://www.linkedin.com/in/gang-cheng-7170a521/">LinkedIn</a>
 </div>
