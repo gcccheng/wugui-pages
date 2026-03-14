@@ -1,0 +1,494 @@
+---
+layout: cv
+title: Gang Cheng's CV
+---
+# Gang Cheng
+
+Red Hat Certified Architect (RHCA) | Red Hat Certified Professional of the Year 2024 | Senior Platform Engineer | Platform Architecture & Governance | AIOps / Platform Ops | Developer Experience
+
+<div id="webaddress">
+<a href="https://www.redhat.com/en/blog/announcing-2024-red-hat-certified-professional-year-gang-cheng">Red Hat Official Profile</a> ·
+<a href="https://www.linkedin.com/in/gang-cheng-7170a521/">LinkedIn</a>
+</div>
+
+## Summary
+
+Gang is self-motivated professional who believes that continuous learning and the ability to rapidly adopt new technologies are essential qualities of a modern infrastructure professional. Throughout his career, he has proactively built expertise in designing and operating large-scale systems through hands-on projects, professional certifications, technical workshops, conferences, courses, and collaboration with industry peers. His dedication and technical depth were formally recognized when he was named the **Red Hat Certified Professional of the Year 2024**, the sole global recipient of the award.
+
+Beyond his strong Red Hat background, Gang has worked across **DevOps, cloud-native platform engineering, site reliability engineering, on-prem data centres, high-performance computing and GPU-accelerated environments**. He has hands-on experience with **Kubernetes, OpenShift, Rancher, GitOps, IaC, observability, security hardening and compliance-oriented platform design**. Regardless different environment, Gang adapts to what the business require. In recent years, he has also started to **integrate LLM/AI capabilities into existing platforms**, exploring how to provide AI safely and reliably as a shared internal service rather than as an isolated tool. He has also worked closely with security leaders to ensure that platforms meet modern security and compliance expectations, gaining hands-on experience with implementing practical security controls and supporting audit readiness efforts. 
+ 
+With over a decade of hands-on experience across diverse IT infrastructure environments, he has successfully delivered stable, high-performance platforms, created value for stakeholders, and collaborated closely with developers, researchers, and cross-functional teams. His strong communication skills, structured thinking, and collaborative mindset continue to enable him to drive meaningful contributions in complex engineering organizations.
+
+---
+
+## Employment
+`2025–Present`
+### Senior Platform Engineer — Appear TV, Oslo, Norway  
+Appear TV is a leading global provider of video compression, media processing and distribution technology, widely used by global broadcasters, telecom operators and major live event organizations, including NBCUniversal, Discovery, NHL, Formula 1 and Riot Games.
+
+---
+
+#### ★ NVIDIA GPU Cluster & Model Serving Platform
+
+##### Responsibilities
+
+- Designed and delivered **platformised NVIDIA GPU cluster capabilities**, defining GPU resource governance and service‑oriented delivery paths.
+- Standardised GPU foundations using **GPU Operator**, establishing reusable cluster baselines.
+- Introduced **Time Slicing** and **MPS** to enable fine‑grained GPU sharing and multi‑tenant concurrency.
+- Brought **GitLab Runner** GPU workloads into platform scheduling with defined policies for GPU pipelines.
+- Integrated GPU observability into the platform stack, covering **utilisation, inference latency, and throughput**.
+- Implemented model artifact versioning and lifecycle governance, enabling traceable releases.
+- Established **GitLab pipelines** to validate new model versions and quality gates before promotion.
+- Used **Argo CD** to automate model rollout and rollback with GitOps‑driven deployment safety.
+- Enforced access control and policy guardrails for GPU workloads via **Kyverno**.
+- Coordinated R&D and platform teams to operationalise model serving and inference workflows.
+
+##### Value Created
+
+- Delivered a governable, observable, and rollback‑safe GPU platform for reliable model serving.
+- Improved GPU utilisation and delivery efficiency through multi‑tenant optimisation and elastic scaling.
+
+---
+#### ★ CISO Partnership & Platform Security Governance
+
+##### Responsibilities
+
+- Built and implemented **Kyverno Policy‑as‑Code** as the core platform security governance mechanism.
+- Led security governance reviews and implementation paths, aligning security controls with business requirements.
+- Reviewed platform baselines to identify key risks and vulnerabilities.
+- Designed and maintained **Validating** and **Mutation** policies, continuously iterating the policy library.
+- Delivered GitOps‑driven security policies for auditability, traceability and rollback.
+- Worked closely with the CISO and security architects to implement security and compliance controls across Kubernetes and DevOps environments, supporting IPO readiness and ISO 27001 certification.
+- Delivered platform‑level security hardening, including RBAC/IAM governance, network policies, secrets management, vulnerability remediation, image scanning, supply‑chain security (SBOM/signing), and audit logging.
+
+##### Value Created
+
+- Established a platform‑level security governance system with auditable controls and compliance readiness.
+- Balanced security requirements with delivery efficiency by aligning policies to business needs.
+
+---
+
+#### ★ Internal Self-Hosted AI Platform
+
+Delivered an internal AI/LLM enablement platform to support engineering use-cases such as log and telemetry analysis, documentation generation, incident explanation and code assistance.
+
+##### Responsibilities
+
+- Acted as technical owner, leading **platform architecture, capability layering and governance model**.
+- Defined roadmap and delivery standards, ran architecture reviews, and coordinated cross‑team execution.
+- Mentored junior engineers through task decomposition and peer reviews to improve delivery quality.
+- Evaluated multiple LLM backends and tools (hosted APIs and local inference) with a focus on **latency, concurrency characteristics, token cost and model behaviour**.
+- Designed a containerised deployment model on Kubernetes, including access control, team isolation and integration with existing SSO / developer tooling.
+- Explored model‑selection strategies by comparing latency, output quality and token usage across different LLM providers (OpenAI, RequestyAI, local Llama variants), identifying which models were most suitable for specific request types.
+- Implemented basic prompt governance, usage logging and cost visibility, laying groundwork for **responsible AI and auditability**.
+- Worked with several R&D teams to promote AI‑assisted engineering practices and capture feedback for future platform evolution (e.g. RAG, code search, knowledge base integration).
+  
+##### Value Created
+
+- Established the company’s first **unified internal AI entry point and platform capability layer**, significantly lowering the barrier for engineers to use LLMs in daily work.
+- Shifted AI usage from ad‑hoc, individual experimentation to **systematic, policy‑aware consumption**.
+- Created a practical foundation for future **AI Gateway‑style capabilities** such as multi‑tenant routing, cost/observability and governance.
+
+ ---
+ 
+#### ★ DevOps Platform (Cloud‑Native Infrastructure Foundation)
+
+##### Responsibilities
+
+- Designed and built a highly available bare‑metal Kubernetes platform using Rancher and Flatcar, defining standardised platform boundaries and capability baselines.
+- Led platform capability roadmap and aligned cross‑team expectations on service catalogue and platform scope.
+- Implemented GitOps workflows with GitLab CI, Argo CD and Kustomize, enabling consistent and auditable deployments.
+- Standardised infrastructure provisioning with Terraform and automated CI/CD pipelines for change governance.
+- Operated platform capabilities including Harbor registry, TrueNAS NFS, ExternalDNS, Bind9, MetalLB, Yocto build environments and GitLab Runners.
+- Introduced design reviews, best practices and reusable templates to guide junior engineers and improve consistency.
+- Built observability using Prometheus + Grafana for clusters, workloads, pipelines and critical SLOs.
+- Worked effectively within Agile and Scrum teams, participating in sprint planning, stand‑ups, and iterative delivery workflows.
+- Regularly used Jira and Confluence to track engineering work, document platform changes, and collaborate with cross‑functional teams.
+
+##### Value Created
+
+- Delivered a standardised, auditable platform foundation that improved delivery consistency and reliability.
+- Reduced operational overhead through automation, observability and governance‑driven workflows.
+
+---
+
+  
+#### ★ Quarterly Disaster Recovery & Full Infrastructure Rebuild via IaC (Appear TV)
+
+To ensure infrastructure resilience and verify that the platform could be fully recovered at any time, we performed quarterly DR drills that involved destroying all infrastructure and rebuilding it from scratch using IaC workflows.
+
+##### Responsibilities
+
+- Designed and executed quarterly DR exercises that removed all existing infrastructure components, including Kubernetes clusters, VMs, and platform services.
+- Rebuilt the entire environment automatically using Terraform, Ansible, and cluster bootstrapping scripts, validating that the IaC definitions were complete, up-to-date, and production-ready.
+- Ensured deterministic, repeatable, and fast environment recovery, reducing dependency on manual operations and increasing overall infrastructure reliability.
+- Documented recovery procedures, measured rebuild time, and provided readiness reports for compliance and operational governance.
+  
+##### Value Created
+
+- Established a provable, auditable DR capability demonstrating that the entire platform could be recreated from zero using declarative IaC.
+- Improved platform resilience, reduced configuration drift, strengthened compliance posture, and ensured the organisation could rapidly recover in case of disaster or major incident.
+
+---
+ 
+#### ★ Appear Hub Platform (Azure-based Global Customer & Partner Portal — in progress)
+
+Appear Hub is a next-generation portal designed to replace legacy solutions and provide a unified, secure interface for Appear’s global customers and manufacturing partners. The platform will support:
+- Firmware and software release distribution
+- Licence and entitlement management for deployed appliances
+- Access to online documentation, release notes and configuration guides
+- Support case submission and diagnostic/log uploads
+- Contract manufacturer (CM) workflows, including access to build artifacts and production resources
+  
+##### Responsibilities (in progress)
+  
+- Designing and operating the **Azure infrastructure foundation** for the Hub using **Azure Container Apps, VMs, Azure Container Registry, Blob Storage, Front Door and DNS**.  
+- Implementing secure authentication and authorisation with **Entra ID (Azure AD)** and role-based access control to segment customers, internal users and contract manufacturers.    
+- Establishing CI/CD and IaC practices for repeatable, auditable deployments and change traceability.  
+- Introducing observability with **Azure Monitor / Log Analytics / Application Insights** for availability, latency, download success rate and support‑case telemetry.  
+- Collaborating with product, support and manufacturing teams to translate requirements into robust, platform‑level capabilities.
+
+##### Value Created
+
+- Established a secure, observable global portal foundation to support scalable evolution.
+- Improved cross‑team delivery efficiency through standardised practices and governance.
+
+---
+
+`2022-2025`
+
+### Senior Infrastructure Engineer at Sopra Steria
+
+During past years, Gang has been worked as DevOps/infrastructure engineer and led/contributed to a variety of projects for customers, including:
+
+---
+
+#### ★ Building High Availabili Kubernetes and Github Actions Runner Controller(ARC)(sole role)
+
+The existing use of GitHub self-hosted runners on virtual machines (VMs) led to significant scalability issues, race conditions, and lack of workload isolation. As the number of CI/CD workflows grew, VM-based runners could no longer provide a flexible and manageable solution. To address this, a container orchestration platform was required to dynamically provision and scale runners on demand, ensuring standardized, isolated, and scalable infrastructure for GitHub Actions workflows.
+
+##### Responsibilities
+
+- Took sole role in designing and implementing a high-availability Kubernetes cluster with GitHub Actions Runner Controller (ARC) to manage dynamic runner provisioning. Migrated CI/CD workflows from VM-based runners to Kubernetes, implemented automated scaling and isolation, and collaborated with developers to refactor pipelines. Established platform monitoring and ongoing maintenance processes.
+  
+##### Value Created
+
+- Delivered a secure, scalable, and automated CI/CD runner platform, reducing manual overhead and improving isolation, reliability, and developer productivity. Standardized the CI/CD pipeline infrastructure for consistency and scalability, while enabling on-demand scaling to meet workload peaks.
+
+---
+
+#### ★ API Gateway & API Management MVP on OpenShift (Customer PoC)
+
+Led a proof-of-concept to evaluate enterprise API gateway and management capabilities for a client needing consistent authentication, routing, and rate control across microservices.
+
+##### Responsibilities
+
+- Deployed Red Hat 3scale (API Manager + APIcast Gateway) on OpenShift using the official Operator.
+- Configured products, backends, routing rules, API keys, and rate-limit plans to model real internal APIs and governance workflows.
+- Demonstrated developer onboarding through the Developer Portal and documented a reference architecture applicable to Kong / Apigee / AWS API Gateway.
+  
+##### Value Created
+
+- Delivered a working MVP showing how API traffic, authentication, and governance could be centralised. Provided a clear foundation for future API-first adoption, even though the PoC did not proceed to production.
+
+---
+
+#### ★ Implementing Ceph Storage Integration for OpenShift
+
+The client required a scalable and highly available storage backend to support stateful workloads running on OpenShift. I worked on deploying and integrating a Ceph-based storage solution to provide reliable Persistent Volume provisioning for the platform.
+
+##### Responsibilities
+
+- Deployed and configured a Ceph cluster to serve as the storage backend for OpenShift, ensuring high availability and replication across nodes.
+- Integrated Ceph with OpenShift via StorageClasses and dynamic PVC provisioning to support stateful applications.
+- Performed validation of read/write performance, redundancy, and failure recovery scenarios.
+- Documented operational procedures, including node replacement, OSD recovery, monitoring, and capacity planning.
+  
+##### Value Created
+
+- Delivered a production-ready storage foundation for OpenShift workloads, enabling the platform to run databases, message queues, and other stateful services reliably.
+Improved resilience and reduced operational risk through automated failover and self-healing storage capabilities.
+
+---
+
+#### ★ Automated Patch Management for Large-Scale Red Hat VM Estate (sole role)
+
+The organisation operated hundreds of Red Hat VMs across multiple environments (production, staging, development), each with different maintenance windows, availability constraints and security requirements. Patch content varied significantly depending on system role, as Red Hat Satellite hosted not only RHEL repositories but also Microsoft and other third-party package sources. The previous manual approach was slow, inconsistent and error-prone, creating operational risk and security exposure.
+
+##### Responsibilities
+
+- Designed and delivered **automated patch management framework** using Ansible integrated with Red Hat Satellite, capable of handling heterogeneous VM types and environment-specific constraints.
+- Developed logic to reconcile patch sources from **multiple Satellite repositories** (Red Hat, Microsoft, third-party) and apply them selectively based on system purpose and compatibility.
+- Collaborated with application owners to define **environment-specific patching windows**,and created **tailored patching policies**, ensuring production systems met uptime requirements.
+- Introduced reporting and auditability for patch status, compliance, error tracking and exception handling.
+
+##### Value Created
+
+- Transformed patching from a manual, high-risk activity into a **consistent, automated and policy-driven process**.
+- Reduced patching errors and improved overall system uptime through controlled rollouts and validation.
+- Ensured security compliance across a complex VM estate while minimising disruption to mission-critical applications.
+- Provided a scalable foundation for ongoing OS lifecycle management and aligned patching practices across teams.
+
+---
+
+#### ★ Ansible Automation Platform (AAP) on OpenShift — Enterprise Automation Platform Implementation
+
+As the organisation's infrastructure and application environments grew, the number of playbooks, inventories, credentials and automation workflows expanded significantly. Automation execution was inconsistent across teams, secrets were managed manually, and there was no unified governance model. AAP on OpenShift was selected as the foundation for a centrally governed automation platform that could support multi-team, multi-tenant and audit-ready operations at scale.
+
+##### Responsibilities
+
+- Led the design and deployment of **Ansible Automation Platform on Red Hat OpenShift**, including controller, execution environments, private automation hub and cluster integration.
+- Built a **multi-tenant automation architecture** to support different teams (Ops, Security, AppDev) with segregated inventories, RBAC policies, credential stores and execution environments.
+- Containerised automation workflows using **Execution Environments** to ensure reproducibility, dependency isolation and security baselines.
+- Defined standardised automation patterns and **governance workflows**, including peer review, validation, testing pipelines and controlled promotion between environments.
+- Established **audit logging, compliance controls and lifecycle management** for playbooks, inventories, job runs and credentials.
+- Collaborated across infrastructure, security, and application engineering teams to migrate existing ad-hoc automation into a unified, secure and scalable platform.
+- Implemented monitoring and usage analytics for job runs, execution bottlenecks and capacity management.
+
+##### Value Created
+
+- Transformed automation from scripts and manual processes into a **centralised, secure and policy-driven automation platform**.  
+- Improved operational consistency and reduced human error by enforcing standardised automation workflows and RBAC governance.  
+- Significantly accelerated automation delivery by enabling shared execution environments and reproducible job execution.  
+- Enhanced security posture through tracked credential usage, containerised execution, and full auditability of automation activities.  
+- Enabled long-term scalability by providing a reusable automation foundation that multiple teams can safely extend.
+
+---
+
+#### Implementing Local S3-Compatible Backend for Terraform State Management using MinIO on Kubernetes(sole role)
+
+Terraform state files were previously stored on local disks, causing issues like lack of version control and collaboration challenges. Public cloud storage (e.g., AWS S3) was not an option due to policy constraints.
+
+##### Responsibilities
+
+- Designed and deployed a MinIO-based S3-compatible backend on an internal Kubernetes platform. Integrated it with GitHub Actions pipelines to enable secure and versioned Terraform state storage within the CI/CD workflow. 
+
+##### Value Created
+
+- Established a reliable, centralized, and versioned Terraform state backend, improving collaboration, auditability, and infrastructure stability—without relying on public cloud services.
+
+---
+
+#### Implementing GitOps Deployment Workflow with Argo CD (sole role)
+
+With increasing demands from developers for faster and more flexible deployments, there was a growing need for a platform that allows developers to dynamically choose which environment to deploy their code to. The goal was to create an automated workflow where a code merge in GitHub would automatically trigger deployment of a new version in Kubernetes — enabling self-service, reducing manual operations, and aligning with modern DevOps practices.
+
+##### Responsibilities
+
+- Designed and implemented GitOps workflows using Argo CD, connecting GitHub branches to Kubernetes namespaces for automated deployments. Built Helm-based reusable templates and structured repositories for dynamic environments, and implemented RBAC and project isolation for security. Worked with development teams to define deployment flows and ensure smooth integration.
+
+##### Value Created
+
+- Established a flexible and automated deployment pipeline aligned with GitOps, enabling developers to deploy code seamlessly across environments. Improved deployment speed, consistency, and security, and reduced operational overhead by shifting to self-service workflows.
+
+---
+
+#### ★ Automating Lifecycle Management of Red Hat Linux (RHEL7→8 Upgrade + RHEL9 Readiness) （sole role）
+
+The organisation needed to both upgrade a large RHEL7  approaching end-of-support and prepare RHEL9 for future production rollout. These required two parallel streams: automating the migration of existing systems and validating the next-generation OS for compatibility, stability and security.
+
+**Responsibilities**
+- Designed and executed a phased **RHEL7→RHEL8 upgrade strategy** in collaboration with application owners, including dependency mapping, compatibility checks, maintenance windows and rollback plans.
+- Automated the upgrade process with Ansible, enabling consistent, repeatable and low-risk upgrades across heterogeneous server groups.
+- In parallel, performed **RHEL9 evaluation and readiness engineering**, including functional testing against existing applications, kernel and package behaviour assessment, and integration with organisational existing tooling.
+- Built and validated a **hardened VMware RHEL9 image template**, defining baseline configuration, security policies and operational dependencies required for large-scale future deployment.
+- Contributed documentation, migration guidance and best practices for long-term OS lifecycle management.
+
+**Value Created**
+- Delivered a structured, automated and compliant upgrade process for the RHEL7→8 transition.
+- Ensured RHEL9 was fully evaluated, hardened and production-ready before mass adoption.
+- Reduced operational risk, eliminated configuration drift and significantly accelerated provisioning for future environments.
+
+---
+
+#### Improving CI/CD Pipelines
+
+The development team encountered various errors and instability when running pipelines on self-hosted runners.
+
+##### Responsibilities 
+
+- Troubleshooted pipeline errors, optimized performance, improved reliability, and worked closely with developers to maintain organized workflows.
+
+##### Value Created
+
+- Freed developers from troubleshooting, allowing them to focus on development and improving overall pipeline efficiency.
+
+---
+
+`2011-2022`
+
+### System Engineer at University of Oslo
+
+At the University of Oslo, Gang played a key role in managing and operating a local data center dedicated to delivering robust and reliable scientific computing infrastructure for researchers at the Centre for Molecular Medicine Norway (NCMM). His responsibilities spanned core IT operations, distributed systems engineering, and close collaboration with scientific researchers.
+
+##### Responsibilities
+
+- Server & Infrastructure Management: Installed, configured, and maintained compute systems for scientific workloads, including Linux-based compute nodes, distributed HPC servers, and NVIDIA GPU-accelerated machines. Built and operated foundational components of the university’s high-performance computing environment, ensuring system reliability, performance, and scalability across research workloads.
+- Windows Deployment and Administration: Automated provisioning and lifecycle management of Windows clients using PXE and SCCM (System Center Configuration Manager). Streamlined software distribution, security patching, and policy compliance for stable operation.
+- Network Operations: Administered public and private research networks using Cisco switches and routers, including NAT, VLAN segmentation, private dns domain and dhcp zone, firewall rules, port assignments, and connectivity troubleshooting to support secure, high-availability access to computing resources.
+- Scientific Software & Distributed Computing Environment: Installed and maintained complex scientific software stacks with unstable dependencies. Optimized computational environments for bioinformatics, molecular modeling, and large-scale data analysis, providing technical guidance for advanced distributed workloads.
+- Daily IT Operations: Performed daily responsibilities including user provisioning, access control, storage management, system monitoring (Nagios, Zabbix), and incident troubleshooting, minimizing downtime for critical research systems.
+- High-Performance Computing (HPC) Engineering & Parallel Workload Support: Contributed to the build-out and ongoing operation of the university’s HPC cluster, including configuration of distributed compute nodes with NVIDIA GPU nodes, shared storage, and Slurm scheduling services. Supported researchers in running parallel and GPU-accelerated jobs, optimized workload performance, and troubleshot issues across multi-node and high-throughput workflows.
+  
+This role formed the foundation for Gang’s later specialization in large-scale distributed systems, platform engineering, GPU-accelerated infrastructure, and high-reliability computing environments.
+
+---
+
+`2008`
+
+### Archive Assistant & Logger — Olympic Broadcasting Services (OBS), Beijing Olympics  
+
+OBS is the International Olympic Committee’s broadcast organization responsible for host broadcasting for the Olympic Games.
+
+##### Responsibilities
+
+- Logged event highlights (SOG) with timestamps for indexing and editing workflows.
+- Worked at the International Broadcast Center (IBC) with global production teams handling multi-venue live feeds.
+- Assisted in managing tape-based archival media (HDCAM/XD) preserved by the IOC.
+- Gained foundational experience in media signal processing long before transitioning into professional media infrastructure engineering.
+
+---
+
+## Certificate
+- Red Hat Certified Professional of the Year 2024  
+- Red Hat Certified Architect  
+- Red Hat Certified Specialist in Containers  
+- Red Hat Certified OpenShift Administrator  
+- Red Hat Certified Specialist in Managing Automation with Ansible Automation Platform  
+- Red Hat Certified Specialist in Deployment and Systems Management  
+- Red Hat Certified Engineer  
+- Red Hat Certified System Administrator
+- NVIDIA AI Infrastructure and Operations Fundamentals
+- Microsoft Certified: Azure Fundamentals  
+- Red Hat Certified Specialist in Containers and Kubernetes
+
+---
+
+## Events & Conference
+
+<a href="https://cloud-native-day-oslo-2025.sessionize.com/schedule"> Cloud Native Day Oslo 2025 </a>
+
+<a href="https://www.redhat.com/en/summit?sc_cid=7013a000003SgNoAAK&gad_source=1&gclid=Cj0KCQjwkN--BhDkARIsAD_mnIrWsK8FpcovhjhNkmFLjS6y1CHJ86KXi1ZhIma1cS59K3BK2zOzx9QaAp_EEALw_wcB&gclsrc=aw.ds"> Red Hat Summit - Red Hat Ansible Fest </a>
+
+---
+
+## Articles
+
+<a href="https://medium.com/@gcccheng/lets-talk-about-troubleshooting-090ab6cbb95c"> Let´s talk about troubleshooting </a>
+
+<a href="https://medium.com/@gcccheng/challenges-tips-and-rewards-working-as-a-consultant-in-norway-4b6ddce2ff3b"> Challenges, tips, and rewards: working as a consultant in Norway </a>
+
+<a href="https://www.linkedin.com/pulse/cloud-native-day-oslo-reflections-highlights-gang-cheng-ripaf/?trackingId=rpGDQr2us8CpWZiuR3Sx%2FA%3D%3D"> Cloud Native Day Oslo — From DevOps to DevEx </a>
+
+---
+
+## Courses
+
+<a href="https://www.coursera.org/learn/gcp-fundamentals"> Google Cloud Foundamentals </a>
+
+<a href="https://www.nvidia.com/en-us/learn/certification/ai-infrastructure-operations-associate/"> Nvidia Academy: AI Infrastructure and Operations
+ </a>
+
+<a href="https://www.coursera.org/learn/genai-for-devops-practitioners"> GenAI for DevOps Practitioners </a>
+
+<a href="https://learning.edx.org/course/course-v1:LinuxFoundationX+LFS162x+3T2019/home"> Linux Foundation: Introduction to DevOps and Site Reliability Engineering(Graded and Certified)</a>
+
+<a href="https://learning.edx.org/course/course-v1:LinuxFoundationX+LFS151.x+2T2020/home"> Linux Foundation: Introduction to Cloud Infrastructure Technologies
+
+ 
+<a href="https://docs.microsoft.com/en-us/learn/certifications/azure-fundamentals/"> MicroSoft Azure Foundamentals </a>
+
+<a href="https://www.uio.no/studier/emner/matnat/ifi/INF5004NSA/index.html"> Intrusion detection and firewalls </a>
+
+<a href="https://www.uio.no/studier/emner/matnat/ifi/INF4018NSA/index.html"> Enterprise Networking: Practices and Technologies </a>
+
+<a href="https://www.uio.no/studier/emner/matnat/ifi/INF5100NSA/index.html"> Research Methods and Data Analysis </a>
+
+<a href="https://www.udemy.com/course/mastering-ansible/?gclid=Cj0KCQiAhMOMBhDhARIsAPVml-HCo3Nm7AYmD15j425Ld7FLtLZOYQ9vTev6CMsi5-DeO7ST9exGqw0aAuX3EALw_wcB&matchtype=e&utm_campaign=LongTail_la.EN_cc.ROW&utm_content=deal4584&utm_medium=udemyads&utm_source=adwords&utm_term=_._ag_80675493522_._ad_535700245675_._kw_ansible+course_._de_c_._dm__._pl__._ti_kwd-822946965094_._li_1010826_._pd__._"> Ansible For System Automation </a>
+
+<a href="https://www.uio.no/studier/emner/matnat/ifi/INF1100/index-eng.html">Introduction to programming with scientific applications</a>
+
+<a href="https://www.edx.org/course/fundamentals-of-containers-kubernetes-and-red-hat">Red Hat: Fundamentals of Containers, Kubernetes, and Red Hat OpenShift</a>
+
+---
+
+## Workshops
+<a href="https://events.redhat.com/profile/form/index.cfm?PKformID=0x11991670001">Azure Red Hat OpenShift AI</a>
+
+<a href="https://aws-experience.com/emea/north/e/ddd34/aws-immersion-day-generative-ai"> AWS RAG and Fine-tuned AI</a>
+            
+<a href="https://www.uio.no/english/services/it/research/hpc/fox/index.html"> Using the High Performance Computing cluster for Educloud Research users </a>
+    
+<a href="https://isovalent.com/isovalent-hands-on-workshop-oslo/"> Cilium Hands-On Workshop & Deep Dive Oslo </a>
+
+Manage vm, virtul network, firewall on Azure
+  
+<a href="http://modules.sourceforge.net/">Using Environment Modules to initialize shell and modify shell environment</a>
+  
+Deploy AWS EC2 instance with terraform
+  
+<a href="https://www.ub.uio.no/english/courses-events/courses/other/coderefinery/Python%20for%20Scientific%20Computing%20%28internediate%29"> Python for Scientific Computing</a>
+
+<a href="https://arnsteio.github.io/UH-IaaS-mini-workshop/"> Virtualized research architecture using openstack</a>
+  
+<a href="https://www.uio.no/tjenester/it/forskning/kompetansehuber/uio-ai-hub-node-project/it-resources/"> AI at UiO </a>
+
+---
+
+## Other Projects
+
+Build multi-model Generative AI experiences on Azure Openshift
+
+Provision VM using Terraform and Configuring CI/CD pipeline on Azure
+
+Build Proxmox virtual infrastructure for complex IT system
+  
+Build Foreman+Ansible+Smart Proxy and provision hosts for large infrastructure
+  
+Integrate Linux to Windows Domain
+
+Build modern inventory system with OCS inventory
+  
+Set up local directory service with OpenLDAP
+  
+<a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus"> Set up Windows Server Update Services for lab network </a>
+
+<a href="https://guacamole.apache.org/">Using Apache Guacamole as free and open-source cross-platform Remote Desktop Gateway</a>
+  
+Intrusion detection and monitoring with Snort and Munin
+
+---
+
+## Experienced Tech Stacks and Skills
+Kubernetes, Docker, Podman, GitHub Actions, GitHub Actions Runner Controller(ARC), GitLab, Red Hat Linux, Red Hat Satellite, Red Hat Openshift, Red Hat Ansible,  Atlassian Bitbucket, Atlassian Confluence, Atlassian Jira, Grafana, Prometheus, Dell PowerEdge, Cisco SWitch, Windows SCCM, Samba, NFS, FirewallD, Active Directory, Terrafform, Bash, Perl, Python, Go 
+
+---
+
+## Exposure Tech Stacks and Skills
+AWS, AliCloud
+
+---
+
+## Education
+`2010-2012`
+University of Oslo: Master in Network and System Administration
+
+---
+ 
+## Hobbies 
+Blog writing, Skiing, and hiking
+
+---
+
+## Languages 
+
+Chinese: Native 
+
+English: Full Professional Working Proficiency
+  
+Norwegian: Professional Working Proficiency
+
+
+<!-- ### Footer
+
+Last updated: December 2025 -->
