@@ -4,21 +4,23 @@ title: Gang Cheng's CV
 ---
 # Gang Cheng
 
-Red Hat Certified Architect (RHCA) | Red Hat Certified Professional of the Year 2024 | Senior Platform Engineer | Platform Architecture & Governance | AIOps / Platform Ops | Developer Experience
+Red Hat Certified Architect (RHCA) | Red Hat Certified OpenShift Administrator | Red Hat Certified Specialist in Containers and Kubernetes | Red Hat Certified Professional of the Year 2024 | Senior Platform Engineer | Platform Architecture & Governance | AIOps / Platform Ops | Developer Experience
 
 <div id="webaddress">
-<a href="/wugui-pages/">中文</a> ·
+<a href="index.html">中文</a> ·
 <a href="https://www.redhat.com/en/blog/announcing-2024-red-hat-certified-professional-year-gang-cheng">Red Hat Official Profile</a> ·
 <a href="https://www.linkedin.com/in/gang-cheng-7170a521/">LinkedIn</a>
 </div>
 
 ## Summary
 
-Gang is self-motivated professional who believes that continuous learning and the ability to rapidly adopt new technologies are essential qualities of a modern infrastructure professional. Throughout his career, he has proactively built expertise in designing and operating large-scale systems through hands-on projects, professional certifications, technical workshops, conferences, courses, and collaboration with industry peers. His dedication and technical depth were formally recognized when he was named the **Red Hat Certified Professional of the Year 2024**, the sole global recipient of the award.
+Gang is a deeply hands-on platform engineer with more than a decade of experience across European engineering organisations and research environments. He focuses on building **platformised, governable, and operable capabilities**, and is strongest when combining architecture thinking with day-to-day delivery, platform operations, fault analysis, and cross-team execution.
 
-Beyond his strong Red Hat background, Gang has worked across **DevOps, cloud-native platform engineering, site reliability engineering, on-prem data centres, high-performance computing and GPU-accelerated environments**. He has hands-on experience with **Kubernetes, OpenShift, Rancher, GitOps, IaC, observability, security hardening and compliance-oriented platform design**. Regardless different environment, Gang adapts to what the business require. In recent years, he has also started to **integrate LLM/AI capabilities into existing platforms**, exploring how to provide AI safely and reliably as a shared internal service rather than as an isolated tool. He has also worked closely with security leaders to ensure that platforms meet modern security and compliance expectations, gaining hands-on experience with implementing practical security controls and supporting audit readiness efforts. 
+He holds **RHCA, Red Hat Certified OpenShift Administrator, and Red Hat Certified Specialist in Containers and Kubernetes**, and his technical depth was formally recognized when he was named **Red Hat Certified Professional of the Year 2024**, the sole global recipient of the award.
+
+Beyond his strong Red Hat background, Gang has worked across **DevOps, cloud-native platform engineering, site reliability engineering, on-prem data centres, high-performance computing and GPU-accelerated environments**. He has hands-on experience with **Kubernetes, OpenShift, Rancher, GitOps, IaC, observability, security hardening and compliance-oriented platform design**. In recent years, he has also integrated LLM/AI capabilities into platform engineering workflows, with practical work around **AI-native SDLC, conversational observability, self-healing operations, and platform capabilities for AI workloads**. He has also worked closely with security leaders to ensure that platforms meet modern security and compliance expectations, gaining hands-on experience with practical security controls and audit readiness. 
  
-With over a decade of hands-on experience across diverse IT infrastructure environments, he has successfully delivered stable, high-performance platforms, created value for stakeholders, and collaborated closely with developers, researchers, and cross-functional teams. His strong communication skills, structured thinking, and collaborative mindset continue to enable him to drive meaningful contributions in complex engineering organizations.
+With over a decade of hands-on experience across diverse infrastructure environments, he has delivered stable, high-performance platforms, supported developers and stakeholders, and driven meaningful outcomes in complex engineering organisations through structured thinking, strong troubleshooting ability, and collaborative execution.
 
 ---
 
@@ -69,6 +71,28 @@ Appear TV is a leading global provider of video compression, media processing an
 
 ---
 
+#### ★ Autonomous Platform SRE Agent
+
+Built and put into real use a modular autonomous SRE agent to reduce platform-engineering toil and move operational work from passive alerting toward proactive detection, analysis, and remediation guidance.
+
+##### Responsibilities
+
+- Designed and implemented a **Python orchestrator** using a modular **Brain + Expert Modules** pattern to coordinate multi-domain operational workflows.
+- Built expert modules for **Kyverno, Proxmox, and supply-chain analysis**, proactively scanning Kubernetes PolicyReports, infrastructure APIs, and dependency data for drift, violations, and upgrade risks.
+- Normalised findings into structured incident cards and used **SQLite** for de-duplication, execution history, and auditability.
+- Used **GPT-4o** for remediation reasoning and command generation, including semantic handling of cases where immutable Pods must be remediated via parent controllers such as Deployments and StatefulSets.
+- Implemented a **Safety Engine / Policy Gatekeeper** with `AUTO / REVIEW / DENY` controls to ensure only low-risk actions can be automated and high-risk changes require human approval.
+- Built a **Flask + HTMX Mission Control dashboard** so engineers can review issues, inspect suggested fixes, approve actions, and track execution results.
+- Integrated the agent into real platform operations rather than leaving it as a demo, covering policy violations, infrastructure health checks, and dependency risk analysis.
+
+##### Value Created
+
+- Reduced repetitive operational work by automating classification and remediation guidance for hundreds of **Kyverno** policy violations and infrastructure health issues.
+- Shifted dependency and configuration maintenance from manual investigation to a review-and-approve workflow, speeding up platform iteration.
+- Demonstrated that AI can safely support production SRE workflows within explicit operational guardrails.
+
+---
+
 #### ★ Internal Self-Hosted AI Platform
 
 Delivered an internal AI/LLM enablement platform to support engineering use-cases such as log and telemetry analysis, documentation generation, incident explanation and code assistance.
@@ -96,11 +120,11 @@ Delivered an internal AI/LLM enablement platform to support engineering use-case
 
 ##### Responsibilities
 
-- Designed and built a highly available bare‑metal Kubernetes platform using Rancher and Flatcar, defining standardised platform boundaries and capability baselines.
+- Designed and built a highly available bare‑metal Kubernetes platform using **Rancher, Flatcar, and Proxmox**, defining standardised platform boundaries and capability baselines.
 - Led platform capability roadmap and aligned cross‑team expectations on service catalogue and platform scope.
 - Implemented GitOps workflows with GitLab CI, Argo CD and Kustomize, enabling consistent and auditable deployments.
-- Standardised infrastructure provisioning with Terraform and automated CI/CD pipelines for change governance.
-- Operated platform capabilities including Harbor registry, TrueNAS NFS, ExternalDNS, Bind9, MetalLB, Yocto build environments and GitLab Runners.
+- Standardised infrastructure provisioning and change governance with **Terraform and Ansible** integrated into CI/CD pipelines.
+- Operated platform capabilities including **Harbor, GitLab, GitLab Runners, Rancher, Proxmox, Kyverno, NGINX Ingress Controller, ExternalDNS, Bind9, MetalLB, TrueNAS NFS**, and Yocto build environments.
 - Introduced design reviews, best practices and reusable templates to guide junior engineers and improve consistency.
 - Built observability using Prometheus + Grafana for clusters, workloads, pipelines and critical SLOs.
 - Worked effectively within Agile and Scrum teams, participating in sprint planning, stand‑ups, and iterative delivery workflows.
