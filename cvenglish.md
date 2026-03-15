@@ -4,7 +4,7 @@ title: Gang Cheng's CV
 ---
 # Gang Cheng
 
-Red Hat Certified Architect (RHCA) | Red Hat Certified OpenShift Administrator | Red Hat Certified Specialist in Containers and Kubernetes | Red Hat Certified Professional of the Year 2024 | Senior Platform Engineer | Platform Architecture & Governance | AIOps / Platform Ops | Developer Experience
+Red Hat Certified Architect (RHCA)｜Red Hat Certified OpenShift Administrator｜Red Hat Certified Specialist in Containers and Kubernetes｜Red Hat Certified Professional of the Year 2024｜Senior Platform Engineer｜Platform Architecture & Governance｜AIOps / Platform Ops｜Developer Experience
 
 <div id="webaddress">
 <a href="index.html">中文</a> ·
