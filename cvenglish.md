@@ -121,6 +121,7 @@ Delivered an internal AI/LLM enablement platform to support engineering use-case
 ##### Responsibilities
 
 - Designed and built a highly available bare‑metal Kubernetes platform using **Rancher, Flatcar, and Proxmox**, defining standardised platform boundaries and capability baselines.
+- Operated Kubernetes infrastructure across **two European data centres in two cities**, with **one production cluster and one staging cluster in each location**; the production estate totals roughly **120 nodes** across physical servers and virtual machines.
 - Led platform capability roadmap and aligned cross‑team expectations on service catalogue and platform scope.
 - Implemented GitOps workflows with GitLab CI, Argo CD and Kustomize, enabling consistent and auditable deployments.
 - Standardised infrastructure provisioning and change governance with **Terraform and Ansible** integrated into CI/CD pipelines.
