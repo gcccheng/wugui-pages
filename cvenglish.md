@@ -31,6 +31,28 @@ Appear TV is a leading global provider of video compression, media processing an
 
 ---
 
+#### ★ Autonomous Platform SRE Agent
+
+Built and put into real use a modular autonomous SRE agent to reduce platform-engineering toil and move operational work from passive alerting toward proactive detection, analysis, and remediation guidance.
+
+##### Responsibilities
+
+- Designed and implemented a **Python orchestrator** using a modular **Brain + Expert Modules** pattern to coordinate multi-domain operational workflows.
+- Built expert modules for **Kyverno, Proxmox, and supply-chain analysis**, proactively scanning Kubernetes PolicyReports, infrastructure APIs, and dependency data for drift, violations, and upgrade risks.
+- Normalised findings into structured incident cards and used **SQLite** for de-duplication, execution history, and auditability.
+- Used **GPT-4o** for remediation reasoning and command generation, including semantic handling of cases where immutable Pods must be remediated via parent controllers such as Deployments and StatefulSets.
+- Implemented a **Safety Engine / Policy Gatekeeper** with `AUTO / REVIEW / DENY` controls to ensure only low-risk actions can be automated and high-risk changes require human approval.
+- Built a **Flask + HTMX Mission Control dashboard** so engineers can review issues, inspect suggested fixes, approve actions, and track execution results.
+- Integrated the agent into real platform operations rather than leaving it as a demo, covering policy violations, infrastructure health checks, and dependency risk analysis.
+
+##### Value Created
+
+- Reduced repetitive operational work by automating classification and remediation guidance for hundreds of **Kyverno** policy violations and infrastructure health issues.
+- Shifted dependency and configuration maintenance from manual investigation to a review-and-approve workflow, speeding up platform iteration.
+- Demonstrated that AI can safely support production SRE workflows within explicit operational guardrails.
+
+---
+
 #### ★ NVIDIA GPU Cluster & Model Serving Platform
 
 ##### Responsibilities
@@ -68,30 +90,6 @@ Appear TV is a leading global provider of video compression, media processing an
 
 - Established a platform‑level security governance system with auditable controls and compliance readiness.
 - Balanced security requirements with delivery efficiency by aligning policies to business needs.
-
----
-
-#### ★ Autonomous Platform SRE Agent
-
-Built and put into real use a modular autonomous SRE agent to reduce platform-engineering toil and move operational work from passive alerting toward proactive detection, analysis, and remediation guidance.
-
-##### Responsibilities
-
-- Designed and implemented a **Python orchestrator** using a modular **Brain + Expert Modules** pattern to coordinate multi-domain operational workflows.
-- Built expert modules for **Kyverno, Proxmox, and supply-chain analysis**, proactively scanning Kubernetes PolicyReports, infrastructure APIs, and dependency data for drift, violations, and upgrade risks.
-- Normalised findings into structured incident cards and used **SQLite** for de-duplication, execution history, and auditability.
-- Used **GPT-4o** for remediation reasoning and command generation, including semantic handling of cases where immutable Pods must be remediated via parent controllers such as Deployments and StatefulSets.
-- Implemented a **Safety Engine / Policy Gatekeeper** with `AUTO / REVIEW / DENY` controls to ensure only low-risk actions can be automated and high-risk changes require human approval.
-- Built a **Flask + HTMX Mission Control dashboard** so engineers can review issues, inspect suggested fixes, approve actions, and track execution results.
-- Integrated the agent into real platform operations rather than leaving it as a demo, covering policy violations, infrastructure health checks, and dependency risk analysis.
-
-##### Value Created
-
-- Reduced repetitive operational work by automating classification and remediation guidance for hundreds of **Kyverno** policy violations and infrastructure health issues.
-- Shifted dependency and configuration maintenance from manual investigation to a review-and-approve workflow, speeding up platform iteration.
-- Demonstrated that AI can safely support production SRE workflows within explicit operational guardrails.
-
----
 
 #### ★ Internal Self-Hosted AI Platform
 
